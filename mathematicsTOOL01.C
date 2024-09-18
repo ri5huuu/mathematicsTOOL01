@@ -16,7 +16,11 @@ int main()
         printf("It is a Prime Number.");
         goto end;
     }
-
+    else-if(num <= 0)
+    {   
+        printf("in-valid");
+        goto end;
+    }
     while (i < num)
     {
         if (num % i == 0)
@@ -67,7 +71,10 @@ int main()
     {
         printf("It is a Prime Number.");
     }
-
+    else-if(num <= 0)
+    {   
+        printf("in-valid"); 
+    }
     return 0;
 }
 
