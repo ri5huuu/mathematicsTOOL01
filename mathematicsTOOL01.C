@@ -11,7 +11,7 @@ int main()
     scanf("%d", &num);
     int i = 2;
 
-    if (num == 2)
+    if (num == 2 || num == 1)
     {
         printf("It is a Prime Number.");
         goto end;
@@ -36,3 +36,38 @@ end:
 
     return 0;
 }
+
+// Alternate method:
+
+#include <stdio.h>
+
+int main()
+{
+
+    printf("Enter a number: ");
+    int num;
+    scanf("%d", &num);
+
+    for (int i = 2; i < num; i++)
+    {
+        int n = (num % i);
+        if (n == 0)
+        {
+            printf("It is a Composite number.");
+            break;
+        }
+        else
+        {
+            printf("It is a Prime number.");
+            break;
+        }
+    }
+
+    if (num == 1 || num == 2)
+    {
+        printf("It is a Prime Number.");
+    }
+
+    return 0;
+}
+
